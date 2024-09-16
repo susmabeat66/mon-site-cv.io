@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV en ligne</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="votre-photo.jpg" alt="Photo de profil" class="profile-pic">
+            <h1>Cédric Leroy</h1>
+            <h2>Formation en Alternance</h2>
+            <p>Diplômé du BAC général en 2024, je suis actuellement à la recherche d'une alternance de 2 ans dans le domaine de l'informatique</p>
+        </div>
+    </header>
+
+    <section id="experience">
+        <h2>Expériences </h2>
+        <div class="job">
+            <h3>Maintenance Informatique</h3>
+            <p><strong>Autodidacte</strong></p>
+            <p><strong>Durée:</strong> +6ans </p>
+            <title>Image à droite d'un texte</title>
+            <style>
+                .container {
+                    display: flex;
+                    justify-content: space-between; /* Sépare l'image et le texte */
+                    align-items: center; /* Centre l'image verticalement par rapport au texte */
+                }
+        
+                .container img {
+                    margin-left: 20px; /* Espace entre le texte et l'image */
+                    max-width: 150px; /* Limite la taille de l'image */
+                }
+        
+                .container p {
+                    flex: 1; /* Le texte prend tout l'espace disponible */
+                }
+            </style>
+        </head>
+        <body>
+        
+            <div class="container">
+                <p> Durant toute ma scolarité et encore aujourd'hui j'ai appris a <br>réparer ,démonter et contruire des ordinateurs tout en choisissant <br>les meilleurs composants pour les besoins de chaqu'un.</p>
+
+                <img src="https://univack.fr/2189-superlarge_default/pc-gamer-black-phanteks-nv5-rtx-4070-ti.jpg" alt="Image avec fondu" class="fade-in-image" width=100% height=100% style="text-align: right;">
+            </div>
+        
+        </body>
+            <section id="image-fade-in">
+            </section>
+        </div>
+        <div class="job">
+            <h3>Developpement WEB</h3>
+            <p><strong>Formation a L'IMERIR et Autodidacte</strong></p>
+            <p><strong>Durée:</strong> 1 an</p>
+            <p>Je suis actuellement entrain d'apprendre <br> l'HTML le CSS le PYTHON que ce soit lors de la formation a l'école <br> IMERIR ou seul a l'aide principalement d'openclassroom</p>
+            <p><strong>Projets:</strong> Quelques sites web comme par exemple celui sur lequel vous etes en ce moment même</p>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>Contact: cedric.leroy@imerir.com |<br> Téléphone: 07 67 01 01 90 <br> <a href="https://www.linkedin.com/in/cédric-leroy-9759282b7/" target="_blank">Mon linkedin avec mon CV plus détaillé</a>        </p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const fadeInImage = document.querySelector(".fade-in-image");
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        fadeInImage.classList.add("fade-in-visible");
+                    }
+                });
+            });
+            observer.observe(fadeInImage);
+        });
+    </script>
+</body>
+</html>
+
+       
+
+               
